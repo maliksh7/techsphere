@@ -30,13 +30,8 @@ public class ImageController {
 
     @PostMapping("/upload")
     public ResponseEntity<ApiResponse> uploadImages(@RequestParam("files") List<MultipartFile> files, @RequestParam("productId") Long productId) {
-        try {
-            List<ImageDto> imageDto = imageService.saveImage(productId, files);
-            return ResponseEntity.ok(new ApiResponse("Images uploaded successfully", imageDto));
-        } catch (Exception e) {
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).body(new ApiResponse("Error uploading images: ", e.getMessage()));
-        }
-
+        List<ImageDto> imageDto = imageService.saveImage(productId, files);
+        return ResponseEntity.ok(new ApiResponse("Images uploaded successfully", imageDto));
     }
 
     @GetMapping("/image/download/{imageId}")
@@ -57,22 +52,14 @@ public class ImageController {
 
     @PutMapping("/update/{imageId}")
     public ResponseEntity<ApiResponse> updateImage(@RequestParam("file") MultipartFile file,@PathVariable Long imageId) {
-        try {
-            imageService.updateImage(file, imageId);
-            return ResponseEntity.ok(new ApiResponse("Image updated successfully", null));
-        } catch (Exception e) {
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).body(new ApiResponse("Error updating image: ", e.getMessage()));
-        }
+        imageService.updateImage(file, imageId);
+        return ResponseEntity.ok(new ApiResponse("Image updated successfully", null));
     }
 
     @DeleteMapping("/delete/{imageId}")
     public ResponseEntity<ApiResponse> deleteImage(@PathVariable Long imageId) {
-        try {
-            imageService.deleteImageById(imageId);
-            return ResponseEntity.ok(new ApiResponse("Image deleted successfully", null));
-        } catch (Exception e) {
-            return ResponseEntity.status(INTERNAL_SERVER_ERROR).body(new ApiResponse("Error deleting image: ", e.getMessage()));
-        }
+        imageService.deleteImageById(imageId);
+        return ResponseEntity.ok(new ApiResponse("Image deleted successfully", null));
     }
 }
 
