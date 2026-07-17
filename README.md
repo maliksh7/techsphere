@@ -1,7 +1,6 @@
 # 🖥️ TechSphere
 
-TechSphere is an e-commerce platform for **electronics, PCs, and accessories**, built with a modern full-stack architecture.
-
+Build and deploy a complete secured eCommerce application to AWS including Stripe payment processing and Spring AI
 ---
 
 ## 🧩 Tech Stack
