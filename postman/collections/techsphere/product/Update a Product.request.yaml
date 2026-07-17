@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/1/update
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "id": 1,
+        "name": "Airpods",
+        "brand": "Apple",
+        "description": "Apple airpods 2nd gen",
+        "price": 256,
+        "inventory": 20,
+        "category": "Airbuds",
+        "images": []
+    }
+auth:
+  type: noauth
+order: 3000

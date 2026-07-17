@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/product/1/delete
+method: DELETE
+auth:
+  type: noauth
+order: 4000

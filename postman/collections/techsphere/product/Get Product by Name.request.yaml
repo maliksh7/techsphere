@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/ïPad 2/products
+method: GET
+auth:
+  type: noauth
+order: 6000

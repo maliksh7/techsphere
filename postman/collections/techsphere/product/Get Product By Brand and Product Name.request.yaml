@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/by/brand/Apple/name/Airpods/products
+method: GET
+order: 10000

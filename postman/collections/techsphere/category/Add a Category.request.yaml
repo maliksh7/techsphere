@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/categories/add
+method: POST
+body:
+  type: json
+  content: '{"name": "Airbuds"}'
+auth:
+  type: noauth
+order: 2000

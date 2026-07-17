@@ -1,0 +1,5 @@
+workspace:
+  id: 411ef8e3-c392-4b01-86b6-5b83ad29e16a
+cloudResources:
+  collections:
+    ../postman/collections/techsphere: 53488494-6145291b-8967-4646-84e7-94319d8ad377

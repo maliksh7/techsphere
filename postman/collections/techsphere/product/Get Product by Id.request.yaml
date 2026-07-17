@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/product/1/product
+method: GET
+auth:
+  type: noauth
+order: 5000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/images/image/download/1
+method: GET
+auth:
+  type: noauth
+order: 2000

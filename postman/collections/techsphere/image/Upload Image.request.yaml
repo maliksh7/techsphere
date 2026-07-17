@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/images/upload?productId=3
+method: POST
+queryParams:
+  productId: "3"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: files
+      src: /Users/maliksh7/Java/Udemy/dev/TechSphere/resources/Apple-iphone-17-pro-max.png
+    - type: file
+      key: files
+      src: /Users/maliksh7/Java/Udemy/dev/TechSphere/resources/Apple-iphone-17-pro-max-2.png
+order: 1000

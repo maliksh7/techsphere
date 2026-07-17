@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/add
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Iphone 17 Pro Max",
+        "brand": "Apple",
+        "price": "1400",
+        "inventory": "50",
+        "description": "Best camera iphone",
+        "category": "Phones"
+    }
+auth:
+  type: noauth
+order: 2000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9090/api/v1/products/by/category/Airbuds/brand/Apple/products
+method: GET
+auth:
+  type: noauth
+order: 9000
