@@ -17,6 +17,8 @@ TechSphere is an e-commerce platform for **electronics, PCs, and accessories**, 
 
 ## 🚀 Getting Started
 
+> ⚠️ **Development in Progress** — Work is ongoing, APIs and features may change. <i>Use at your own risk.</i>
+
 ### 1️⃣ Prerequisites
 - Java 17+
 - Node.js 18+
@@ -38,7 +40,8 @@ npm install
 npm start
 
 ```
-
+- Frontend runs on http://localhost:3000
+- Backend runs on http://localhost:8080
 ---
 
 #### Testing
