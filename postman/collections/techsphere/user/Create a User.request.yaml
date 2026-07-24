@@ -1,0 +1,13 @@
+$kind: http-request
+name: Create a User
+url: http://localhost:9090/api/v1/users/add
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "firstName": "Saad",
+        "lastName": "Hassan",
+        "email": "awansaadhassan@gmail.com"
+    }
+order: 1784306116980

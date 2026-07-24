@@ -1,15 +1,16 @@
 $kind: http-request
+name: Add a New  Product
 url: http://localhost:9090/api/v1/products/add
 method: POST
 body:
   type: json
   content: |-
     {
-        "name": "Iphone 17 Pro Max",
-        "brand": "Apple",
-        "price": "1400",
-        "inventory": "50",
-        "description": "Best camera iphone",
+        "name": "Galaxy 24 ultra",
+        "brand": "Samsung",
+        "price": "1350",
+        "inventory": "45",
+        "description": "Premium Phone",
         "category": "Phones"
     }
 auth:

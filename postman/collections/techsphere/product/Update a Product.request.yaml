@@ -1,16 +1,17 @@
 $kind: http-request
-url: http://localhost:9090/api/v1/products/1/update
+name: Update a Product
+url: http://localhost:9090/api/v1/products/5/update
 method: PUT
 body:
   type: json
   content: |-
     {
-        "id": 1,
+        "id": 5,
         "name": "Airpods",
         "brand": "Apple",
         "description": "Apple airpods 2nd gen",
         "price": 256,
-        "inventory": 20,
+        "inventory": 19,
         "category": "Airbuds",
         "images": []
     }
